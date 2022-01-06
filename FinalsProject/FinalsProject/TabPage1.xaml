@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalsProject.TabPage1"
+             BackgroundColor="LightSalmon">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Tab Page 1"
+                   FontSize="36"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Click me" Clicked="Button_Clicked"/>
+            <Label x:Name="lblClick" FontSize="36   "/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
