@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalsProject.AppShell"
+             xmlns:local="clr-namespace:FinalsProject">
+
+    
+
+    <FlyoutItem Title="Foreign Exchange App" Icon="{OnPlatform Android=ic_android}">
+        <ShellContent ContentTemplate="{DataTemplate local:TabPage1}"  />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Page 2" Icon="{OnPlatform Android=ic_windows}">
+        <ShellContent ContentTemplate="{DataTemplate local:TabPage2}"  />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Page 3" Icon="{OnPlatform Android=ic_apple}">
+        <ShellContent ContentTemplate="{DataTemplate local:TabPage3}"    />  
+    </FlyoutItem>
+    
+</Shell>

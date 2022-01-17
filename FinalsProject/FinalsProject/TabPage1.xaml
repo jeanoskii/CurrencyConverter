@@ -2,13 +2,49 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FinalsProject.TabPage1"
-             BackgroundColor="LightSalmon">
+             BackgroundColor="snow"
+             Title="FOREX">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Tab Page 1"
-                   FontSize="36"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            
+            <Label Text="Welcome to the Foreign Exchange Application"
+                   FontSize="22" 
+                   HorizontalTextAlignment="Center"
+                   Padding="5"/>
+            <Label Text="Set the amount and currency you want to convert"
+                   HorizontalOptions="Center"/>
+
+            <Editor Text="1"
+                    HorizontalOptions="Center"
+                    FontSize="40"
+                    Keyboard="Numeric"
+                    x:Name="ConvertAmountFrom"/>
+            <Picker
+                HorizontalOptions="Center"
+                WidthRequest="50"
+                x:Name="ConvertCurrencyFrom">
+                <Picker.Items>
+                    <x:String>USD</x:String>
+                    <x:String>PHP</x:String>
+                </Picker.Items>
+            </Picker>
+            <Label Text="is equal to"
+                   HorizontalOptions="Center"
+                   FontSize="22"/>
+
+            <Label Text="50"
+                    HorizontalOptions="Center"
+                    FontSize="40"
+                   x:Name="ConvertAmountTo"/>
+            <Picker
+                HorizontalOptions="Center"
+                WidthRequest="50"
+                x:Name="ConvertCurrencyTo">
+                <Picker.Items>
+                    <x:String>USD</x:String>
+                    <x:String>PHP</x:String>
+                </Picker.Items>
+            </Picker>
             <Button Text="Click me" Clicked="Button_Clicked"/>
             <Label x:Name="lblClick" FontSize="36   "/>
         </StackLayout>

@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace FinalsProject
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page1 : TabbedPage
+    public partial class AppShell : Shell
     {
-        public Page1()
+        public AppShell()
         {
             InitializeComponent();
         }
